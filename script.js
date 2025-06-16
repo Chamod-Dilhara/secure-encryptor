@@ -31,3 +31,10 @@ function copyText() {
   document.execCommand('copy');
   alert('Text copied to clipboard!');
 }
+// Mobile Navbar Toggle
+const toggleBtn = document.getElementById("navbar-toggle");
+const menu = document.getElementById("navbar-menu");
+
+toggleBtn.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
